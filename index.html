@@ -136,6 +136,19 @@ Ningbo Institute of Industrial Technology, Chinese Academy of Sciences&nbsp;&nbs
         <!--    --><div class="center-container">
   <!-- 居中显示的图片 -->
   <img alt="Motivation" src="./static/images/Comparative Experimental.png" width="100%"/>
+</div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-three-fifths">
+      <h2 class="title is-3">Comparison</h2>
+        <!--    --><div class="center-container">
+  <!-- 居中显示的图片 -->
   <img alt="Motivation" src="./static/images/Comparative Experimental Table.png" width="100%"/>
 </div>
     </div>
@@ -144,44 +157,25 @@ Ningbo Institute of Industrial Technology, Chinese Academy of Sciences&nbsp;&nbs
 </section>
 
 
-
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-three-fifths">
       <h2 class="title is-3">Ablation Studying</h2>
-      <!-- 居中显示带序号的图片 -->
-      <div class="center-container">
-        <div class="image-with-label">
-          <img alt="Motivation" src="./static/images/Fig12_1_00.png" width="50%">
-          <span class="label">(a)</span>
-        </div>
-        <div class="image-with-label">
-          <img alt="Motivation" src="./static/images/Fig12_2_00.png" width="50%">
-          <span class="label">(b)</span>
-        </div>
-        <div class="image-with-label">
-          <img alt="Motivation" src="./static/images/Fig12_3_00.png" width="50%">
-          <span class="label">(c)</span>
-        </div>
-        <div class="image-with-label">
-          <img alt="Motivation" src="./static/images/Fig12_4_00.png" width="50%">
-          <span class="label">(d)</span>
-        </div>
+      <!--    --><div class="center-container">
+  <!-- 居中显示的图片 -->
+  <img alt="Motivation" src="./static/images/Ablation Experiments.png" width="100%"/>
+</div>
+      <!--    --><div class="center-container">
+  <!-- 居中显示的图片 -->
+  <img alt="Motivation" src="./static/images/Ablation Experiments Table.png" width="100%"/>
+</div>
       </div>
     </div>
   </div>
   <div class="content has-text-justified">
     <p>
-      Square boxes indicate localized areas used for comparison, rounded boxes show the thickness
-      of localized areas indicating smoothness, and elliptical boxes show inconsistencies in multi-floor walls. (a) is the result of
-      fast-lio2, where one can see that the floors are inconsistent as well and localized walls are quite rough. (b) is the result of
-      BEF, where it is clear that the inconsistency between floors is eliminated but localized roughness remains. (c) is the result of
-      HBA, which is not possible to correlate the floors but it is clear that the walls are thinner, which implies a smoothing of the
-      local trajectories. (d) is the result of the fusion of BEF and LBA (LBA is the basic technique of HBA) in the factor graph,
-      which not only takes into account the global offset correction of BEF but also retains the local smoothing effect of LBA.
+      The ablation study clearly shows that the omission of dynamic sampling and depth loss leads to significant blurring and ghosting. Additionally, the lack of dynamic sampling methods results in a large number of invalid samples, which significantly impacts convergence speed and hinders the generation of high-quality rendered images within a short period. And, the absence of depth loss causes a focus solely on image information, disregarding depth information that could serve as a constraint. Furthermore, utilising a simple depth loss function without incorporating feature weights can result in indistinct occlusions near occluded objects and loss of detail due to the overbearing influence of depth information. As a result, it is imperative to differentiate the reliability of depth information in various regions by incorporating feature weights. Additionally, neglecting dynamic sampling methods increases the distance between sampling points and affects the convergence of the model. This can also make it difficult to accurately estimate the surface location of objects, resulting in blurred rendered images and the appearance of airborne floaters in the scene. If feature weights weighted according to depth loss are not used, some details may become blurred due to a possible lack of accurate depth information. Additionally, smoothed regions that should be more dependent on depth information may have uneven colours due to the excessive influence of the image.
     </p>
   </div>
 </div>
@@ -209,36 +203,15 @@ Ningbo Institute of Industrial Technology, Chinese Academy of Sciences&nbsp;&nbs
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{jin2024ipal,
-  title={IPAL: Infinite Planes as Lines for Consistent Mapping in Indoor Multi-floor Environments},
-  author={Jin, Xiaofeng and Ge, Jianfei and Xiao, Jiangjian and Bu, Ningbo and Xu, Gen},
-  journal={IEEE Transactions on Instrumentation and Measurement},
+    <pre><code>@article{qin2024dipnerf,
+  title={Dip-NeRF: Depth-Based Anti-Aliased Neural Radiance Fields},
+  author={Qin, Shihao and Xiao, Jiangjian and Ge, Jianfei},
+  journal={Electronics},
   year={2024},
-  publisher={IEEE}
+  publisher={MDPI}
 }</code></pre>
   </div>
 </section>
-
-
-<!--<footer class="footer">-->
-<!--  <div class="container">-->
-<!--    <div class="content has-text-centered">-->
-<!--    </div>-->
-<!--    <div class="columns is-centered">-->
-<!--      <div class="column is-8">-->
-<!--        <div class="content">-->
-<!--          <p>-->
-<!--            We thank the authors of <a-->
-<!--            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> that kindly open sourced the template of this website.-->
-<!--            The html script of video comparison is borrowed from <a-->
-<!--            href="https://dorverbin.github.io/refnerf/">Ref-NeRF</a>.-->
-<!--          </p>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</footer>-->
-
 
 
 <script>
