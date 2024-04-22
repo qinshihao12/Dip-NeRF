@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="IPAL: Infinite Planes as Lines for Consistent
+Mapping in Indoor Multi-floor Environments">
+  <meta name="keywords" content="IPAL">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaussian Test page</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>        
+  
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+});
+</script>
+
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body", style="padding-bottom: 0rem;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">IPAL: Infinite Planes as Lines for Consistent
+Mapping in Indoor Multi-floor Environments</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Xiaofeng Jin<sup>1,2</sup>&nbsp;&nbsp;</span>
+            <span class="author-block">
+              Jianfei Ge<sup>1*</sup>&nbsp;&nbsp;</span>
+            <span class="author-block">
+               Jiangjian Xiao<sup>1</sup>&nbsp;&nbsp;</span>
+            </span>
+            <span class="author-block">
+              Ningbo Bu<sup>1</sup>&nbsp;&nbsp;</span>
+            </span>
+            <span class="author-block">
+              Gen Xu<sup>1</sup>&nbsp;&nbsp;</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block", style="color:#726f6f"><sup>1</sup>Ningbo Institute of Materials Technology Engineering,CAS&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block", style="color:#726f6f"><sup>2</sup>Zhejiang
+University of Technology&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block", style="font-size: 15px;color:#726f6f"> (email:jinxiaofeng, gejianfei, xiaojj, buningbo,
+xugen@nimte.ac.cn)</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block", style="font-size: 15px;color:#726f6f"><sup>*&nbsp;</sup>Corresponding author&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block", style="color:#367DBD";>IEEE Transactions on
+Instrumentation & Measurement 2024</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10399936"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Soon)</span>
+                  </a>
+              </span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>  .center-container {
+    display: flex;
+    justify-content: center;
+  }
+</style>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+
+        <img alt="Architecture" src="./static/images/Fig2_00(2).png" width="100%"/>
+<!--        新增一个图片，放上下两张图-->
+
+      </div>
+    </div>
+    <div class="content has-text-justified">
+      <p>
+        Indoor high-precision maps are harder to obtain.
+        Numerous researchers considered the extendibility of indoor
+        plane features to constrain the poses and improve mapping
+        consistency. However, the usage of parametric planar or line
+        features requires complex modeling, and threshold-based matching methods are eager to lead to degradation. Indeed, planes
+        can be more simply represented as line projections, with the
+        projection direction perpendicular to the plane’s normal vector. In this paper, we proposed a novel mapping optimization
+        framework that incorporates building outline features specifically
+        designed for multi-story buildings. The framework consists of
+        three main components: LiDAR Bundle Adjustment(LBA), global
+        constraints based on building outline features, and factor graph
+        optimization. The method extracts the ground only for horizontal
+        correction, while the core idea is based on the assumption of
+        vertical structure, projecting the point cloud contours of multistory buildings to the top view perspective for independent spatial
+        pose correlation, which is a strong constraint and very effective.
+        Finally, constraints are constructed based on keyframes and
+        intermediate frames are refined by a factor graph. Through
+        extensive experiments conducted on multi-story buildings, we
+        demonstrate that our algorithm significantly enhances mapping
+        consistency and local accuracy compared to existing methods
+      </p>
+    </div>
+<!--    --><div class="center-container">
+  <!-- 居中显示的图片 -->
+  <img alt="Motivation" src="./static/images/Fig1_1_00.png" width="49%"/>
+    <img alt="Motivation" src="./static/images/Fig1_2_00.png" width="50%"/>
+</div>
+  </section>
+
+
+
+<section class="section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-three-fifths">
+      <h2 class="title is-3">Comparison With SOTA</h2>
+        <!--    --><div class="center-container">
+  <!-- 居中显示的图片 -->
+  <img alt="Motivation" src="./static/images/图片16.png" width="50%"/>
+    <img alt="Motivation" src="./static/images/图片17.png" width="50%"/>
+</div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <h2 class="title is-3">Ablation Studying</h2>
+      <!-- 居中显示带序号的图片 -->
+      <div class="center-container">
+        <div class="image-with-label">
+          <img alt="Motivation" src="./static/images/Fig12_1_00.png" width="50%">
+          <span class="label">(a)</span>
+        </div>
+        <div class="image-with-label">
+          <img alt="Motivation" src="./static/images/Fig12_2_00.png" width="50%">
+          <span class="label">(b)</span>
+        </div>
+        <div class="image-with-label">
+          <img alt="Motivation" src="./static/images/Fig12_3_00.png" width="50%">
+          <span class="label">(c)</span>
+        </div>
+        <div class="image-with-label">
+          <img alt="Motivation" src="./static/images/Fig12_4_00.png" width="50%">
+          <span class="label">(d)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content has-text-justified">
+    <p>
+      Square boxes indicate localized areas used for comparison, rounded boxes show the thickness
+      of localized areas indicating smoothness, and elliptical boxes show inconsistencies in multi-floor walls. (a) is the result of
+      fast-lio2, where one can see that the floors are inconsistent as well and localized walls are quite rough. (b) is the result of
+      BEF, where it is clear that the inconsistency between floors is eliminated but localized roughness remains. (c) is the result of
+      HBA, which is not possible to correlate the floors but it is clear that the walls are thinner, which implies a smoothing of the
+      local trajectories. (d) is the result of the fusion of BEF and LBA (LBA is the basic technique of HBA) in the factor graph,
+      which not only takes into account the global offset correction of BEF but also retains the local smoothing effect of LBA.
+    </p>
+  </div>
+</div>
+</section>
+
+<style>
+  .image-with-label {
+    display: inline-block;
+    position: relative;
+    margin-right: -40px;
+  }
+
+  .image-with-label .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.8em;
+    line-height: 1;
+    color: #666;
+  }
+</style>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{jin2024ipal,
+  title={IPAL: Infinite Planes as Lines for Consistent Mapping in Indoor Multi-floor Environments},
+  author={Jin, Xiaofeng and Ge, Jianfei and Xiao, Jiangjian and Bu, Ningbo and Xu, Gen},
+  journal={IEEE Transactions on Instrumentation and Measurement},
+  year={2024},
+  publisher={IEEE}
+}</code></pre>
+  </div>
+</section>
+
+
+<!--<footer class="footer">-->
+<!--  <div class="container">-->
+<!--    <div class="content has-text-centered">-->
+<!--    </div>-->
+<!--    <div class="columns is-centered">-->
+<!--      <div class="column is-8">-->
+<!--        <div class="content">-->
+<!--          <p>-->
+<!--            We thank the authors of <a-->
+<!--            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> that kindly open sourced the template of this website.-->
+<!--            The html script of video comparison is borrowed from <a-->
+<!--            href="https://dorverbin.github.io/refnerf/">Ref-NeRF</a>.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</footer>-->
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.video-compare-container').forEach(function (container, index) {
+      console.log("Index of the container:", index);
+      container.addEventListener('click', function () {
+        if (index === 0) {
+          this.classList.toggle('expand-right');
+        } else if (index === 2) {
+          this.classList.toggle('expand-left');
+        } else {
+          this.classList.toggle('expanded');
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
