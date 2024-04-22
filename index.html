@@ -46,8 +46,7 @@ MathJax.Hub.Config({
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">IPAL: Infinite Planes as Lines for Consistent
-Mapping in Indoor Multi-floor Environments</h1>
+          <h1 class="title is-1 publication-title">Dip-NeRF: Depth-Based Anti-Aliased Neural Radiance Fields</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               Shihao Qin<sup>1,2</sup>&nbsp;&nbsp;</span>
@@ -137,16 +136,6 @@ Ningbo Institute of Industrial Technology, Chinese Academy of Sciences&nbsp;&nbs
   <!-- 居中显示的图片 -->
   <img alt="Motivation" src="./static/images/Comparative Experimental.png" width="100%"/>
 </div>
-    </div>
-  </div>
-</div>
-</section>
-
-
-<section class="section">
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-three-fifths">
-      <h2 class="title is-3">Comparison</h2>
         <!--    --><div class="center-container">
   <!-- 居中显示的图片 -->
   <img alt="Motivation" src="./static/images/Comparative Experimental Table.png" width="100%"/>
@@ -160,7 +149,7 @@ Ningbo Institute of Industrial Technology, Chinese Academy of Sciences&nbsp;&nbs
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-three-fifths">
+      <div class="column is-four-fifths">
       <h2 class="title is-3">Ablation Studying</h2>
       <!--    --><div class="center-container">
   <!-- 居中显示的图片 -->
@@ -172,11 +161,10 @@ Ningbo Institute of Industrial Technology, Chinese Academy of Sciences&nbsp;&nbs
 </div>
       </div>
     </div>
-  </div>
-  <div class="content has-text-justified">
-    <p>
-      The ablation study clearly shows that the omission of dynamic sampling and depth loss leads to significant blurring and ghosting. Additionally, the lack of dynamic sampling methods results in a large number of invalid samples, which significantly impacts convergence speed and hinders the generation of high-quality rendered images within a short period. And, the absence of depth loss causes a focus solely on image information, disregarding depth information that could serve as a constraint. Furthermore, utilising a simple depth loss function without incorporating feature weights can result in indistinct occlusions near occluded objects and loss of detail due to the overbearing influence of depth information. As a result, it is imperative to differentiate the reliability of depth information in various regions by incorporating feature weights. Additionally, neglecting dynamic sampling methods increases the distance between sampling points and affects the convergence of the model. This can also make it difficult to accurately estimate the surface location of objects, resulting in blurred rendered images and the appearance of airborne floaters in the scene. If feature weights weighted according to depth loss are not used, some details may become blurred due to a possible lack of accurate depth information. Additionally, smoothed regions that should be more dependent on depth information may have uneven colours due to the excessive influence of the image.
-    </p>
+    <div class="content has-text-justified">
+      <p>
+        The ablation study clearly shows that the omission of dynamic sampling and depth loss leads to significant blurring and ghosting. Additionally, the lack of dynamic sampling methods results in a large number of invalid samples, which significantly impacts convergence speed and hinders the generation of high-quality rendered images within a short period. And, the absence of depth loss causes a focus solely on image information, disregarding depth information that could serve as a constraint. Furthermore, utilising a simple depth loss function without incorporating feature weights can result in indistinct occlusions near occluded objects and loss of detail due to the overbearing influence of depth information. As a result, it is imperative to differentiate the reliability of depth information in various regions by incorporating feature weights. Additionally, neglecting dynamic sampling methods increases the distance between sampling points and affects the convergence of the model. This can also make it difficult to accurately estimate the surface location of objects, resulting in blurred rendered images and the appearance of airborne floaters in the scene. If feature weights weighted according to depth loss are not used, some details may become blurred due to a possible lack of accurate depth information. Additionally, smoothed regions that should be more dependent on depth information may have uneven colours due to the excessive influence of the image.
+      </p>
   </div>
 </div>
 </section>
