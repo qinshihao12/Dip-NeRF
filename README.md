@@ -4,6 +4,12 @@ Dip-NeRF: Depth-Based Anti-Aliased Neural Radiance Fields
 
 Shihao Qin,Jiangjian Xiao and Jianfei Ge
 
+Faculty of Electrical Engineering and Computer Science, Ningbo University, Ningbo 315201, China
+
+Ningbo Institute of Industrial Technology, Chinese Academy of Sciences, Ningbo 315201, China
+
+Electronics 2024, 13(8), 1527
+
 https://www.mdpi.com/2079-9292/13/8/1527
 
 ## Table Of Contents
