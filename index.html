@@ -110,7 +110,7 @@ Ningbo Institute of Industrial Technology, Chinese Academy of Sciences&nbsp;&nbs
       <div class="columns is-centered">
         <div class="column is-one-third">
           <div class="video-compare-container" id="materialsDiv1" style="width: 100%;">
-            <video class="video" id="materials1" loop playsinline  height="100%" width="100%" autoplay muted src="./static/videos/compare.mp4" onplay="resizeAndPlay(this)"></video>
+            <video class="video" id="materials1" loop playsinline height="500px" width="100%" autoplay muted src="./static/videos/compare.mp4" onplay="resizeAndPlay(this)"></video>
             <canvas height="0" class="videoMerge" id="materials1Merge" style="border-radius: 10px;"></canvas>
           </div>
         </div>
@@ -120,21 +120,15 @@ Ningbo Institute of Industrial Technology, Chinese Academy of Sciences&nbsp;&nbs
 </section>
 
 
-<!-- <section class="section">
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-three-fifths">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-building">
-          <video poster="" id="building" autoplay controls muted loop playsinline height="100%">
+
+<section class="section">
+  <div class="center-container">
+          <video poster="" id="building" autoplay  muted loop  height="50%" width="50%">
             <source src="./static/videos/pointcloud.mp4"
                     type="video/mp4">
           </video>
-        </div>
-      </div>
-    </div>
   </div>
-</section> -->
-
+</section>
   
 <section class="section">
   <div class="container is-max-desktop">
@@ -237,9 +231,9 @@ Ningbo Institute of Industrial Technology, Chinese Academy of Sciences&nbsp;&nbs
     document.querySelectorAll('.video-compare-container').forEach(function (container, index) {
       console.log("Index of the container:", index);
       container.addEventListener('click', function () {
-        if (index === 0) {
+        if (index ===22) {
           this.classList.toggle('expand-right');
-        } else if (index === 2) {
+        } else if (index === 222) {
           this.classList.toggle('expand-left');
         } else {
           this.classList.toggle('expanded');
