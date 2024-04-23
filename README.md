@@ -1,6 +1,10 @@
+<div align="center">
+  
 # Dip-NeRF
 
-Dip-NeRF: Depth-Based Anti-Aliased Neural Radiance Fields
+</div>
+
+__Dip-NeRF: Depth-Based Anti-Aliased Neural Radiance Fields__
 
 Shihao Qin,Jiangjian Xiao and Jianfei Ge
 
@@ -9,8 +13,7 @@ Faculty of Electrical Engineering and Computer Science, Ningbo University, Ningb
 Ningbo Institute of Industrial Technology, Chinese Academy of Sciences, Ningbo 315201, China
 
 Electronics 2024, 13(8), 1527
-
-https://www.mdpi.com/2079-9292/13/8/1527
+[:newspaper:Paper](https://www.mdpi.com/2079-9292/13/8/1527)
 
 ## Table Of Contents
 - [Keywords](#keywords)
@@ -40,6 +43,8 @@ Neural radiation field (NeRF)-based novel view synthesis methods are gaining pop
 ![对比图tool](https://github.com/qinshihao12/Dip-NeRF/assets/96531673/18af6cb6-d427-4815-9130-3c43bb08e92d)
 
 ![Comparative Experimental Table](https://github.com/qinshihao12/Dip-NeRF/assets/96531673/c524ef98-9116-42a2-ba65-a55e8b0ad2a5)
+
+
 
 ### Ablation Study
 
